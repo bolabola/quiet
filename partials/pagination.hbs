@@ -1,0 +1,9 @@
+<div class="pagenav">
+	{{#if prev}}
+	<a class="prev" href="{{page_url prev}}">«上一页</a>
+	{{/if}}
+	<span>{{t " {page} / {pages}" page=page pages=pages}}</span>
+	{{#if next}}
+	<a class="next" href="{{page_url next}}">下一页»</a>
+	{{/if}}
+</div>

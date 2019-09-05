@@ -1,0 +1,23 @@
+{{!< default}}
+<header>
+<h1><a href="{{@site.url}}">{{@site.title}}</a></h1>
+{{#if @site.description}}
+	<span>{{@site.description}}</span>
+{{/if}}
+</header>
+<div class="content">
+<div class="post">
+<ul class="post-list">
+{{#foreach posts}}
+<li class="post-item">
+<span class="post-meta">
+<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
+<span class="slash">/</span>
+</span>
+<a href="{{url}}">{{{title}}}</a>
+</li>
+{{/foreach}}
+</ul>
+</div>
+{{pagination}}
+</div>
