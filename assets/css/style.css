@@ -30,10 +30,11 @@ pre,textarea {
 }
 
 body {
-    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
-    font-size: 16px;
-    color: #39434d;
-    letter-spacing: .5px
+	color: #2f2f2f;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.7;
+	overflow-wrap: break-word;
 }
 
 #container {
@@ -75,23 +76,30 @@ a.img,a.img:hover {
 
 #footer a:hover,.post a:hover {
     color: #32393f;
-    border-bottom: 1px solid #32393f
 }
 
-ul.post-list {
-    padding: .7em 0
+.post-list {
+	list-style: none;
+	padding: 0
 }
 
-li {
-    padding: .2em 0
+.post-list li {
+	padding: 5px 0;
+    font-size: 14px;
 }
 
-.post-meta {
-    margin: 1em 0 0
+.post-list li a {
+	max-width: 70%;
+	display: inline-block;
+	text-decoration: none;
 }
 
-.post-meta,.post-meta a {
-    color: #8796a3
+.post-list li span {
+	color: #a9a9a9;
+	max-width: 25%;
+	display: inline-block;
+	float: right;
+	text-align: right;
 }
 
 p {
